@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://kit.fontawesome.com/10b1433d55.js" crossorigin="anonymous"></script>
+    <style>
+    
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .client_Reg{
+        grid-area: client_Reg;
+        background-image: linear-gradient(180deg
+    , rgb(40, 153, 102) 52%, rgb(14, 138, 82) 50%);
+    }
+    .supplier_Reg{
+        background-image: linear-gradient(180deg
+    , rgb(124, 45, 189) 52%, rgb(152, 4, 197) 50%);
+        grid-area: supplier_Reg;
+    }
+    .login{
+        background-image: linear-gradient(180deg
+    , rgb(3, 134, 185) 52%, rgb(0, 102, 143) 50%);
+        grid-area: login;
+    }
+    .about{
+        background-image: linear-gradient(180deg
+    , rgb(240, 200, 71) 52%, rgb(197, 184, 4) 50%);
+        grid-area: supplier_Reg;
+        grid-area: about;
+    }
+    .chld{
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ .container a i{
+     font-size: 60px;
+ }
+ .heading h1{
+    text-align: center;
+    box-shadow: black 5px 2px 10px;
+ }
+ .heading h1 span{
+     font-size: 40px;
+     background-color: black;
+     color: white;
+     padding: 10px 10px 0px 10px;
+     border-top-right-radius: 20px;
+     border-top-left-radius: 20px;
+    
+ }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1> <span>i</span>CONS FINANCE</h1>
+    </div>
+   
+    <div class="container">
+        <a href="client_Reg.jsp">
+            <div class="client_Reg chld">
+                <i class="fas fa-users"></i>
+                <h2>Client Registration</h2>
+            </div>
+        </a>
+        <a href="supplier_Reg.jsp">
+            <div class="supplier_Reg chld">
+                <i class="fas fa-handshake"></i>
+                <h2>Supplier Registration</h2>
+            </div>
+        </a>
+
+        <a href="login.jsp">
+            <div class="login chld">
+                <i class="fas fa-sign-in-alt"></i>
+                <h2>Login</h2>
+            </div>
+    </a>
+
+    <a href="#">
+        <div class="about chld">
+            <i class="fas fa-address-card"></i>
+            <h2>About</h2>
+        </div>
+</a>
+    </div>
+</body>
+</html>
